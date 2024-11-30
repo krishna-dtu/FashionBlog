@@ -1,0 +1,73 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main header */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Horizontal rule styling */
+hr {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px auto;
+}
+
+/* Sub-header styling */
+h2 {
+    font-size: 2rem;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* Text box styling for About content */
+p {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Links styling */
+a {
+    display: inline-block;
+    margin: 10px 15px;
+    text-decoration: none;
+    color: #ff5e5e;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #333;
+}
+
+/* Box styling around the paragraphs */
+p {
+    max-width: 600px;
+    margin: 0 auto 15px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

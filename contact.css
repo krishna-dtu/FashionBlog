@@ -1,0 +1,88 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main header styling */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Sub-header styling */
+h2, h3 {
+    font-size: 1.8rem;
+    color: #555;
+    margin: 20px 0 10px;
+}
+
+/* Paragraph styling */
+p {
+    max-width: 600px;
+    margin: 10px auto;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Contact information styling */
+p b {
+    color: #333;
+    font-weight: bold;
+}
+
+p u {
+    color: #0073e6;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Link styling */
+a {
+    display: inline-block;
+    margin: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff5e5e;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #333;
+}
+
+/* Horizontal rule styling */
+hr {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px auto;
+}
+
+/* Social media styling */
+p b {
+    display: inline-block;
+    color: #0073e6;
+}
+
+p a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: #ff5e5e;
+}
