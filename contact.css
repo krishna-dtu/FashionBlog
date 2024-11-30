@@ -13,20 +13,31 @@ body {
     line-height: 1.6;
     padding: 20px;
     text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 /* Main header styling */
 h1 {
-    font-size: 2.5rem;
-    color: #333;
+    font-size: 60px;
+    color: #222;
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.1);  /* Slightly increase the size on hover */
 }
 
 /* Sub-header styling */
 h2, h3 {
     font-size: 1.8rem;
-    color: #555;
+    color: #444;
     margin: 20px 0 10px;
+    transition: color 0.3s ease;
+}
+
+h2:hover, h3:hover {
+    color: #0073e6; /* Change color when hovered */
 }
 
 /* Paragraph styling */
@@ -35,6 +46,11 @@ p {
     margin: 10px auto;
     font-size: 1.1rem;
     color: #666;
+    transition: color 0.3s ease;
+}
+
+p:hover {
+    color: #444; /* Change text color on hover */
 }
 
 /* Contact information styling */
@@ -56,33 +72,119 @@ a {
     font-weight: bold;
     text-decoration: none;
     color: #ff5e5e;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 a:hover {
     color: #333;
+    transform: translateY(-5px); /* Slight upward movement on hover */
 }
 
 /* Horizontal rule styling */
 hr {
     width: 80%;
-    border: 0;
+    border: solid black;
     height: 1px;
     background-color: #ccc;
     margin: 20px auto;
+    transition: width 0.3s ease;
 }
 
-/* Social media styling */
-p b {
-    display: inline-block;
-    color: #0073e6;
+hr:hover {
+    width: 100%; 
 }
 
-p a {
-    color: #0073e6;
+form {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.25); 
+}
+
+/* Textarea styling */
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #0e0d0d;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #0073e6; /* Border color change on focus */
+}
+
+/* Button styling */
+button {
+    width: 50%;
+    padding: 12px;
+    background-color: #ff5e5e;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+    transform: scale(1.25); /* Slightly increase button size on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #444;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+footer a {
+    font-size: 30px;
+    color: white;
     text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-p a:hover {
+footer a:hover {
     color: #ff5e5e;
+    transform: translateX(5px); /* Slight horizontal movement on hover */
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    button {
+        width: 70%;
+    }
 }
